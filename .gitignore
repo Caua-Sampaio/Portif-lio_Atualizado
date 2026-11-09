@@ -1,0 +1,12 @@
+# Arquivos de sistema operacional (Windows e Mac)
+.DS_Store
+Thumbs.db
+
+# Configurações de editores de código (como VS Code)
+.vscode/
+
+# Arquivos de ambiente ou logs (se utilizar no futuro)
+.env
+*.log
+robots.txt
+sitemap.xml
