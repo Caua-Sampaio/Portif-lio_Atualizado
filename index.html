@@ -1,285 +1,293 @@
 <!DOCTYPE html>
-<!-- Define o tipo de documento como HTML5 e o idioma principal como Português do Brasil -->
 <html lang="pt-BR">
 <head>
-    <!-- Configuração da codificação de caracteres para suportar acentos e símbolos -->
-    <meta charset="UTF-8">
-    
-    <!-- Torna a página responsiva, ajustando a escala de visualização para celulares e telas menores -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Título que aparece na aba do navegador -->
-    <title>Cauã Duarte | Desenvolvedor Front-End & Soluções Web</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Cauã Sampaio — Sites e sistemas sob medida</title>
+  <meta name="description" content="Desenvolvedor web: sites institucionais, lojas virtuais e sistemas sob medida para o seu negócio. Peça um orçamento pelo WhatsApp.">
+  <meta name="theme-color" content="#070b14">
+  <link rel="icon" href="img/logo-icone.svg" type="image/svg+xml">
 
-    <!-- ============================================== -->
-    <!-- META TAGS DE SEO E OTIMIZAÇÃO PARA BUSCAS      -->
-    <!-- ============================================== -->
-    
-    <!-- Descrição que aparece nos resultados de busca do Google -->
-    <meta name="description" content="Portfólio de Cauã Duarte, Desenvolvedor Front-End especializado em React.js, Vite e criação de sites institucionais, landing pages e soluções web de alta conversão.">
-    
-    <!-- Palavras-chave principais para indexação nos buscadores -->
-    <meta name="keywords" content="Desenvolvedor Front-End, React.js, Vite, Criação de Sites, Landing Pages, Portfólio, Web Designer, São Paulo">
-    
-    <!-- Autor do projeto -->
-    <meta name="author" content="Cauã Duarte">
-    
-    <!-- Controla a indexação e o rastreio por robôs de busca -->
-    <meta name="robots" content="index, follow">
+  <!-- Fontes (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap">
 
-    <!-- ============================================== -->
-    <!-- OPEN GRAPH (Otimizado para WhatsApp, LinkedIn, etc.) -->
-    <!-- ============================================== -->
-    
-    <!-- Título exibido no preview do link compartilhado -->
-    <meta property="og:title" content="Cauã Duarte | Desenvolvedor Front-End & Soluções Web">
-    
-    <!-- Descrição exibida no preview do link compartilhado -->
-    <meta property="og:description" content="Transforme sua presença digital. Conheça meus projetos e contrate soluções em desenvolvimento front-end e landing pages de alta conversão.">
-    
-    <!-- Tipo de conteúdo da página -->
-    <meta property="og:type" content="website">
-    
-    <!-- URL principal do seu site (substitua pelo link real quando publicar) -->
-    <meta property="og:url" content="https://seusite.com.br">
-    
-    <!-- Imagem de visualização do preview (adicione um print do seu portfólio depois na raiz com o nome banner.png) -->
-    <meta property="og:image" content="https://seusite.com.br/banner.png">
-    <meta property="og:locale" content="pt_BR">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/style.css">
 
-    <!-- Conexão prévia com os servidores do Google Fonts para carregar as fontes mais rápido -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- Importação da fonte 'Plus Jakarta Sans' para dar um visual moderno e limpo -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Importação da biblioteca FontAwesome para habilitar o uso de ícones vetoriais -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Importação do arquivo de estilos CSS externo onde ficará a estilização visual -->
-    <link rel="stylesheet" href="style.css">
+  <!-- Script -->
+  <script src="js/script.js" defer></script>
 </head>
 <body>
-    <!-- Header / Navbar Principal -->
-    <header class="header">
-        <div class="container nav-container">
-            <!-- Logo / Identidade Visual com seu Nome -->
-            <div class="logo">
-                <i class="fa-solid fa-code"></i>
-                <span>Cauã<span>Duarte</span></span>
-            </div>
-            
-            <!-- Links de navegação interna pelas seções do portfólio -->
-            <nav class="nav-links">
-                <a href="#sobre">Sobre Mim</a>
-                <a href="#projetos">Projetos</a>
-                <a href="#servicos">Serviços</a>
-                <a href="#contato">Contato</a>
-            </nav>
-            
-            <!-- Botão de Ação Direta (CTA) para o seu WhatsApp Comercial -->
-            <a href="https://wa.me/5515999999999?text=Olá,%20vi%20seu%20portfólio%20e%20quero%20orçamento%20para%20um%20projeto%20web" target="_blank" class="btn btn-outline">
-                <i class="fa-brands fa-whatsapp"></i> Vamos Conversar
-            </a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container header-bar">
+      <a class="logo" href="#top"><img src="img/logo-horizontal.svg" alt="" srcset=""></a>
+
+      <nav class="nav-links" aria-label="Menu principal">
+        <a href="#sobre">Sobre</a>
+        <a class="min" href="#skills">Skills</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#projetos">Projetos</a>
+        <a class="min" href="#depoimentos">Depoimentos</a>
+        <a href="#processo">Como trabalho</a>
+        <a class="min" href="#faq">FAQ</a>
+        <a class="min" href="#contato">Contato</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn-cta" href="https://wa.me/5515996017417?text=Ol%C3%A1%2C%20Cau%C3%A3!%20Vi%20seu%20site%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener">Orçamento</a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====================== MAIN ====================== -->
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="container">
+        <div>
+          <span class="badge"><i></i>Disponível para novos projetos</span>
+          <h1>Sites e sistemas <em>sob medida</em> para o seu negócio</h1>
+          <p class="sub">Sou o Cauã, desenvolvedor web. Crio soluções rápidas, modernas e feitas para vender.</p>
+          <a class="btn" href="https://wa.me/5515996017417?text=Ol%C3%A1%2C%20Cau%C3%A3!%20Vi%20seu%20site%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener">Pedir orçamento</a>
+          <a class="btn btn-outline" href="#servicos">Ver serviços</a>
+          <div class="tech"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Node.js</span></div>
         </div>
-    </header>
 
-    <!-- Main Content Container -->
-    <main>
+        <div class="code" aria-hidden="true">
+          <div class="window-bar"><i></i><i></i><i></i><span>caua.js</span></div>
+<pre><span class="k">const</span> dev = {
+  nome: <span class="s">"Cauã Sampaio"</span>,
+  foco: [<span class="s">"sites"</span>, <span class="s">"lojas"</span>, <span class="s">"sistemas"</span>],
+  status: <span class="s">"disponível"</span>
+};
 
-        <!-- Seção Sobre Mim -->
-        <section id="sobre" class="about-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Sobre <span class="gradient-text">Mim</span></h2>
-                    <p>Conheça um pouco da minha trajetória, paixão por tecnologia e formação.</p>
-                </div>
+dev.<span class="f">criar</span>(<span class="s">"seu projeto"</span>);</pre>
+        </div>
+      </div>
+    </section>
 
-                <div class="about-grid">
-                    <div class="about-text">
-                        <h3>Desenvolvedor Front-End & Tecnólogo em Ciência de Dados</h3>
-                        <p>Sou o Cauã Duarte Sampaio, nascido em Sorocaba/SP. Apaixonado por programação e tecnologia desde os tempos de técnico no SENAI, atualmente busco transformar ideias em interfaces web modernas, responsivas e de alto desempenho utilizando React.js, Vite, HTML e CSS.</p>
-                        <p>Tenho facilidade com lógica de programação, desenvolvimento focado em experiência do usuário (UI/UX) e estou sempre focado em entregar código limpo, estruturado e escalável para clientes e empresas.</p>
-                        
-                        <div class="about-details">
-                            <div class="detail-item">
-                                <strong>Formação:</strong> Tecnólogo em Ciência de Dados (Facens) & Téc. Informática para Internet (SENAI)
-                            </div>
-                            <div class="detail-item">
-                                <strong>Localidade:</strong> Sorocaba, SP[cite: 2]
-                            </div>
-                        </div>
-                    </div>
+    <!-- Sobre -->
+    <section id="sobre">
+      <div class="container about">
+        <div>
+          <span class="eyebrow">Sobre mim</span>
+          <h2 class="title">Código limpo e design com propósito.</h2>
+          <p class="lead">Transformo ideias em produtos digitais bonitos, rápidos e fáceis de usar.</p>
+          <p>Uno código organizado e atenção aos detalhes para criar sites e sistemas que resolvem problemas reais.</p>
+        </div>
 
-                    <div class="about-cards-stack">
-                        <div class="mini-card">
-                            <i class="fa-solid fa-graduation-cap"></i>
-                            <div>
-                                <h4>Centro Universitário Facens</h4>
-                                <p>Ciência de Dados (2021 - 2023)</p>
-                            </div>
-                        </div>
-                        <div class="mini-card">
-                            <i class="fa-solid fa-laptop-code"></i>
-                            <div>
-                                <h4>SENAI Gaspar Ricardo Junior</h4>
-                                <p>Técnico em Informática para Internet & Mecatrônica[cite: 2]</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="profile-card">
+          <div class="window-bar"><i></i><i></i><i></i><span>perfil.json</span></div>
+          <div class="profile-body">
+            <div class="profile-head">
+              <img class="avatar" src="img/avatar.svg" alt="Foto fictícia de Cauã Sampaio" width="84" height="84">
+              <div>
+                <b>Cauã Sampaio</b>
+                <small>Desenvolvedor Web</small>
+                <span class="status"><i></i>Disponível para projetos</span>
+              </div>
             </div>
-        </section>
-
-        <!-- Seção Projetos -->
-        <section id="projetos" class="projects-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Projetos em <span class="gradient-text">Destaque</span></h2>
-                    <p>Alguns dos trabalhos e aplicações desenvolvidos por mim ao longo da minha jornada.</p>
-                </div>
-
-                <div class="projects-grid">
-                    <!-- Projeto 1 -->
-                    <div class="project-card">
-                        <div class="project-info">
-                            <span class="project-tag">React.js & Vite</span>
-                            <h3>Site Institucional / Clínica</h3>
-                            <p>Desenvolvimento de páginas web responsivas e voltadas para o setor de prestação de serviços e estética, com foco em conversão e performance.</p>
-                            <div class="project-links">
-                                <a href="https://github.com/Caua-Duarte" target="_blank" class="btn-link">
-                                    <i class="fa-brands fa-github"></i> Repositório
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Projeto 2 -->
-                    <div class="project-card">
-                        <div class="project-info">
-                            <span class="project-tag">C# & .NET</span>
-                            <h3>PokeApp</h3>
-                            <p>Aplicação interativa desenvolvida para escolher e gerenciar listagens e simulações de batalhas de Pokémon.</p>
-                            <div class="project-links">
-                                <a href="https://github.com/Caua-Duarte/PokeApp" target="_blank" class="btn-link">
-                                    <i class="fa-brands fa-github"></i> Ver no GitHub[cite: 1]
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Projeto 3 -->
-                    <div class="project-card">
-                        <div class="project-info">
-                            <span class="project-tag">HTML, CSS & JS</span>
-                            <h3>Sistema CRUD de Biblioteca</h3>
-                            <p>Sistema completo de gerenciamento para adicionar, listar, alterar e deletar registros de livros em uma biblioteca digital fictícia.</p>
-                            <div class="project-links">
-                                <a href="https://github.com/Caua-Duarte" target="_blank" class="btn-link">
-                                    <i class="fa-brands fa-github"></i> Repositório
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="profile-links">
+              <a href="https://github.com/Caua-Sampaio" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://www.linkedin.com/in/caua-duarte-sampaio/" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="https://www.instagram.com/duartecaua/" target="_blank" rel="noopener">Instagram</a>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Seção Skills & Tecnologias -->
-        <section id="skills" class="skills-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Minhas <span class="gradient-text">Skills</span></h2>
-                    <p>Tecnologias e ferramentas que utilizo no dia a dia para desenvolver soluções robustas.</p>
-                </div>
+    <!-- Skills e trajetória -->
+    <section class="section--alt" id="skills">
+      <div class="container">
+        <span class="eyebrow">Skills e trajetória</span>
+        <h2 class="title">Minha stack e minha jornada</h2>
 
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <i class="fa-brands fa-react"></i>
-                        <h3>React.js & Vite</h3>
-                        <p>Criação de componentes reutilizáveis, single-page applications e alta performance.</p>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fa-solid fa-code"></i>
-                        <h3>HTML5 & CSS3</h3>
-                        <p>Marcação semântica limpa, estilização moderna e separação de variáveis/design tokens.</p>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fa-brands fa-js"></i>
-                        <h3>JavaScript (ES6+)</h3>
-                        <p>Manipulação do DOM, assincronismo, consumo de APIs e lógica de programação avançada.</p>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fa-solid fa-database"></i>
-                        <h3>C# & .NET / SQL</h3>
-                        <p>Experiência com back-end, estruturas de banco de dados e sistemas CRUD integrados[cite: 1].</p>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fa-brands fa-git-alt"></i>
-                        <h3>Git & GitHub</h3>
-                        <p>Controle de versão, gerenciamento de repositórios e organização de fluxo de trabalho.</p>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fa-solid fa-pen-nib"></i>
-                        <h3>Figma & UI Design</h3>
-                        <p>Prototipagem de interfaces, estruturação visual e foco em experiência do usuário (UX).</p>
-                    </div>
-                </div>
+        <div class="skills-grid">
+          <div class="tile"><b>HT</b><span>HTML</span></div>
+          <div class="tile"><b>CS</b><span>CSS</span></div>
+          <div class="tile"><b>JS</b><span>JavaScript</span></div>
+          <div class="tile"><b>Rx</b><span>React</span></div>
+          <div class="tile"><b>No</b><span>Node.js</span></div>
+          <div class="tile"><b>Py</b><span>Python</span></div>
+          <div class="tile"><b>SQL</b><span>Banco de dados</span></div>
+          <div class="tile"><b>Git</b><span>Git &amp; GitHub</span></div>
+        </div>
+
+        <div class="timeline">
+          <div><span class="year">2023</span><b>Formação</b><p>Curso / Instituição — adicione sua formação.</p></div>
+          <div><span class="year">2024</span><b>Primeiros projetos</b><p>Estágio ou freelas — descreva o que você construiu.</p></div>
+          <div><span class="year">2025</span><b>Desenvolvedor Web</b><p>Empresa ou projeto — suas principais entregas.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos">
+      <div class="container">
+        <span class="eyebrow">Serviços</span>
+        <h2 class="title">O que eu faço pelo seu negócio</h2>
+        <p class="price-note">Projetos <b>a partir de R$ 600</b> · orçamento sem compromisso</p>
+
+        <div class="services-grid">
+          <div class="service"><span class="n">01</span><b>Site institucional</b><p>Página profissional para apresentar sua empresa, rápida, responsiva e pronta para o Google.</p><a href="https://wa.me/5515996017417?text=Quero%20or%C3%A7ar%20um%20site%20institucional" target="_blank" rel="noopener">Pedir orçamento</a></div>
+          <div class="service"><span class="n">02</span><b>Loja virtual</b><p>E-commerce com catálogo, carrinho e pagamentos para você vender 24 horas por dia.</p><a href="https://wa.me/5515996017417?text=Quero%20or%C3%A7ar%20uma%20loja%20virtual" target="_blank" rel="noopener">Pedir orçamento</a></div>
+          <div class="service"><span class="n">03</span><b>Sistema sob medida</b><p>Painéis, agendamentos e automações feitos para o processo da sua empresa.</p><a href="https://wa.me/5515996017417?text=Quero%20or%C3%A7ar%20um%20sistema%20sob%20medida" target="_blank" rel="noopener">Pedir orçamento</a></div>
+          <div class="service"><span class="n">04</span><b>Manutenção e melhorias</b><p>Correções, atualizações e novas funções para o site que você já tem.</p><a href="https://wa.me/5515996017417?text=Preciso%20de%20manuten%C3%A7%C3%A3o%20no%20meu%20site" target="_blank" rel="noopener">Pedir orçamento</a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <section class="section--alt" id="projetos">
+      <div class="container">
+        <span class="eyebrow">Projetos selecionados</span>
+        <h2 class="title">Trabalhos em destaque</h2>
+
+        <div class="projects-grid">
+          <article class="project">
+            <img src="img/projeto-velure.svg" alt="Capa do projeto Velure" loading="lazy">
+            <div class="project-body">
+              <b>Velure</b><small>Moda · Web</small>
+              <p>Landing page elegante para marca de moda.</p>
+              <span class="project-tags"><i>HTML</i><i>CSS</i><i>JavaScript</i></span>
+              <a class="project-link" href="https://github.com/Caua-Sampaio" target="_blank" rel="noopener">Ver projeto →</a>
             </div>
-        </section>
-
-        <!-- Seção de Contato -->
-        <section id="contato" class="contact-section">
-            <div class="container">
-                <div class="contact-box">
-                    <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
-                        <h2>Vamos construir algo <span class="gradient-text">incrível juntos?</span></h2>
-                        <p>Entre em contato para conversarmos sobre oportunidades de freela, projetos web ou vagas em desenvolvimento front-end.</p>
-                    </div>
-
-                    <div class="contact-grid">
-                        <div class="contact-info-list">
-                            <a href="https://wa.me/5515996017417?text=Olá,%20Cauã!%20Vi%20seu%20portfólio%20e%20quero%20conversar." target="_blank" class="contact-item">
-                                <i class="fa-brands fa-whatsapp"></i>
-                                <div>
-                                    <span>WhatsApp Comercial</span>
-                                    <strong>(15) 99601-7417</strong>
-                                </div>
-                            </a>
-                            <a href="mailto:caua.duarte.sampaio@outlook.com" class="contact-item">
-                                <i class="fa-solid fa-envelope"></i>
-                                <div>
-                                    <span>E-mail Profissional</span>
-                                    <strong>caua.duarte.sampaio@outlook.com</strong>
-                                </div>
-                            </a>
-                            <a href="https://www.linkedin.com/in/caua-duarte-tech/" target="_blank" class="contact-item">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                                <div>
-                                    <span>LinkedIn</span>
-                                    <strong>/in/caua-duarte-tech</strong>[cite: 2]
-                                </div>
-                            </a>
-                            <a href="https://github.com/Caua-Duarte" target="_blank" class="contact-item">
-                                <i class="fa-brands fa-github"></i>
-                                <div>
-                                    <span>GitHub</span>
-                                    <strong>/Caua-Duarte</strong>[cite: 1]
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+          </article>
+          <article class="project">
+            <img src="img/projeto-calm-by-design.svg" alt="Capa do projeto Calm by Design" loading="lazy">
+            <div class="project-body">
+              <b>Calm by Design</b><small>Interiores · Web</small>
+              <p>Site minimalista para estúdio de interiores.</p>
+              <span class="project-tags"><i>HTML</i><i>CSS</i><i>React</i></span>
+              <a class="project-link" href="https://github.com/Caua-Sampaio" target="_blank" rel="noopener">Ver projeto →</a>
             </div>
-        </section>
+          </article>
+          <article class="project">
+            <img src="img/projeto-savor.svg" alt="Capa do projeto Savor" loading="lazy">
+            <div class="project-body">
+              <b>Savor</b><small>Restaurante · Web</small>
+              <p>Cardápio e reservas online.</p>
+              <span class="project-tags"><i>React</i><i>Node.js</i></span>
+              <a class="project-link" href="https://github.com/Caua-Sampaio" target="_blank" rel="noopener">Ver projeto →</a>
+            </div>
+          </article>
+          <article class="project">
+            <img src="img/projeto-forma-studio.svg" alt="Capa do projeto Forma Studio" loading="lazy">
+            <div class="project-body">
+              <b>Forma Studio</b><small>Arquitetura · Web</small>
+              <p>Portfólio visual para escritório.</p>
+              <span class="project-tags"><i>HTML</i><i>CSS</i><i>JavaScript</i></span>
+              <a class="project-link" href="https://github.com/Caua-Sampaio" target="_blank" rel="noopener">Ver projeto →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    </main> <!-- Fim da tag main -->
+    <!-- Depoimentos (conteúdo fictício: troque por depoimentos reais) -->
+    <section id="depoimentos">
+      <div class="container">
+        <span class="eyebrow">Depoimentos</span>
+        <h2 class="title">O que dizem sobre meu trabalho</h2>
 
-    
+        <div class="testimonials-grid">
+          <div class="testimonial"><span class="stars">★★★★★</span><p>“Entregou o site antes do prazo e superou o que a gente imaginava. Comunicação clara do começo ao fim.”</p><div class="who"><span class="initials">MR</span><div><b>Mariana Ribeiro</b><small>Diretora, Studio Aurora</small></div></div></div>
+          <div class="testimonial"><span class="stars">★★★★★</span><p>“Código organizado e design cuidadoso. Foi muito fácil dar continuidade ao projeto depois.”</p><div class="who"><span class="initials">LF</span><div><b>Lucas Ferreira</b><small>Tech Lead, NovaTech</small></div></div></div>
+          <div class="testimonial"><span class="stars">★★★★★</span><p>“Profissional atento aos detalhes. Nosso site ficou rápido, bonito e as vendas online aumentaram.”</p><div class="who"><span class="initials">AC</span><div><b>Ana Clara Mendes</b><small>Fundadora, Casa Lume</small></div></div></div>
+        </div>
+      </div>
+    </section>
 
-</body>
-</html>
+    <!-- Como trabalho -->
+    <section class="section--alt" id="processo">
+      <div class="container">
+        <span class="eyebrow">Como trabalho</span>
+        <h2 class="title">Do primeiro contato à entrega</h2>
+
+        <div class="steps">
+          <div><span class="num">01</span><b>Conversa</b><p>Entendo seu negócio, seu público e o que você precisa.</p><em>Sem compromisso</em></div>
+          <div><span class="num">02</span><b>Proposta</b><p>Você recebe escopo, prazo e valor antes de começar.</p><em>Tudo combinado</em></div>
+          <div><span class="num">03</span><b>Design</b><p>Mostro como o site vai ficar para você aprovar.</p><em>Você aprova</em></div>
+          <div><span class="num">04</span><b>Desenvolvimento</b><p>Construo o projeto e ajusto ao longo do caminho.</p><em>Acompanhamento</em></div>
+          <div><span class="num">05</span><b>Testes</b><p>Testo em celular, tablet e computador e corrijo os detalhes.</p><em>Qualidade</em></div>
+          <div><span class="num">06</span><b>Entrega e suporte</b><p>Site no ar e suporte depois da entrega.</p><em>Pós-entrega</em></div>
+        </div>
+
+        <h3 class="title title--sm">O que está incluso</h3>
+        <div class="chips">
+          <span>Design responsivo</span><span>Código organizado</span><span>SEO básico</span>
+          <span>Velocidade otimizada</span><span>Botão de WhatsApp</span><span>Suporte pós-entrega</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="container">
+        <span class="eyebrow">Dúvidas</span>
+        <h2 class="title">Perguntas frequentes</h2>
+
+        <details><summary>Quanto custa um site?</summary><p>Projetos a partir de R$ 600; o valor final depende do tamanho e das funções. Me chame no WhatsApp e envio um orçamento sem compromisso.</p></details>
+        <details><summary>Qual o prazo de entrega?</summary><p>Sites simples costumam levar de 1 a 3 semanas. Projetos maiores têm prazo combinado na proposta.</p></details>
+        <details><summary>O site funciona no celular?</summary><p>Sim. Todo projeto é responsivo e testado em celular, tablet e computador.</p></details>
+        <details><summary>Você faz manutenção depois da entrega?</summary><p>Sim. Ofereço suporte e manutenção para manter seu site atualizado e funcionando.</p></details>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="section--alt cta-section" id="contato">
+      <div class="container">
+        <p>Vamos tirar o seu projeto do papel?</p>
+        <div class="cta-actions">
+          <a class="btn" href="https://wa.me/5515996017417?text=Ol%C3%A1%2C%20Cau%C3%A3!%20Vi%20seu%20site%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+          <a class="btn btn-outline" href="mailto:caua.duarte.sampaio@gmail.com">caua.duarte.sampaio@gmail.com</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Cauã Sampaio</div>
+          <p>Desenvolvedor &amp; Designer Web. Disponível para novos projetos.</p>
+        </div>
+        <div>
+          <h4>Navegação</h4>
+          <a href="#sobre">Sobre</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <a href="https://wa.me/5515996017417" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="mailto:caua.duarte.sampaio@gmail.com">E-mail</a>
+          <a href="https://github.com/Caua-Sampaio" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/caua-duarte-sampaio/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.instagram.com/duartecaua/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+      <div class="footer-bar">
+        <span>© 2026 Cauã Duarte Sampaio. Todos os direitos reservados.</span>
+        <a href="#top">Voltar ao topo ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante do WhatsApp -->
+  <a class="wa-float" href="https://wa.me/5515996017417?text=Ol%C3%A1%2C%20Cau%C3%A3!%20Vi%20seu%20site%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener">WhatsApp</a>
 
 </body>
 </html>
